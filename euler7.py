@@ -1,21 +1,13 @@
-import math
 import sys
 
-
-def is_prime(n):
-  if n < 2:
-    return False
-  for i in range(2, int(math.sqrt(n)) + 1):
-    if n % i == 0:
-      return False
-  return True
+import primality
 
 
 def get_nth_prime(n):
   num_primes = 0
   i = 2
   while True:
-    if is_prime(i):
+    if primality.is_prime(i):
       num_primes += 1
       if num_primes == n:
         return i

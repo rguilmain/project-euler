@@ -1,16 +1,6 @@
-import math
 import sys
 
-
-def is_prime(n):
-  """Cleverly stolen from my solution to the 7th Project Euler problem.
-  """
-  if n < 2:
-    return False
-  for i in range(2, int(math.sqrt(n)) + 1):
-    if n % i == 0:
-      return False
-  return True
+import primality
 
 
 def get_sum_of_primes(upper_limit):
@@ -18,7 +8,7 @@ def get_sum_of_primes(upper_limit):
   # This approach works for an input size of 2000000 if we let it run for a
   # minute, but we're going to need something better for anything much larger.
   for i in range(2, upper_limit + 1):
-    if is_prime(i):
+    if primality.is_prime(i):
       running_sum += i
   return running_sum
 

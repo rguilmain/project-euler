@@ -1,30 +1,14 @@
 import sys
 
-import util
+import primality
 
 
 def get_nth_triangle_num(n):
   return n * (n + 1) / 2
 
 
-def get_prime_factorization(n):
-  """Modified from euler3.py.
-  """
-  prime_factors = {}
-  while n != 1:
-    for i in util.range_large(2, n + 1):
-      if n % i == 0:
-        if i in prime_factors:
-          prime_factors[i] += 1
-        else:
-          prime_factors[i] = 1
-        n /= i
-        break
-  return prime_factors
-
-
 def get_num_divisors(n):
-  prime_factorization = get_prime_factorization(n)
+  prime_factorization = primality.get_prime_factorization(n)
   num_divisors = 1
   for factor in prime_factorization:
     num_divisors *= (prime_factorization[factor] + 1)

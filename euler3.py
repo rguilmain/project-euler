@@ -1,17 +1,6 @@
 import sys
 
-import util
-
-
-def get_prime_factors(n):
-  prime_factors = []
-  while n != 1:
-    for i in util.range_large(2, n + 1):
-      if n % i == 0:
-        prime_factors.append(i)
-        n /= i
-        break
-  return prime_factors
+import primality
 
 
 def main(argv=None):
@@ -19,7 +8,7 @@ def main(argv=None):
     sys.argv = argv
 
   n = 600851475143
-  print max(get_prime_factors(n))
+  print max(primality.get_prime_factorization(n))
 
 
 if __name__ == "__main__":
