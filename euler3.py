@@ -1,20 +1,12 @@
 import sys
 
-
-def range_large(start, stop):
-  """The built-in range function in Python 2.x does not support numbers large
-  enough for this problem, so we make our own.
-  """
-  i = start
-  while i < stop:
-    yield i
-    i += 1
+import util
 
 
 def get_prime_factors(n):
   prime_factors = []
   while n != 1:
-    for i in range_large(2, n + 1):
+    for i in util.range_large(2, n + 1):
       if n % i == 0:
         prime_factors.append(i)
         n /= i
