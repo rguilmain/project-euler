@@ -3,7 +3,7 @@ import sys
 
 def get_sum_of_multiples_of_3_and_5(upper_limit):
   multiples = []
-  for i in range(1000):
+  for i in range(upper_limit):
     if i % 3 == 0 or i % 5 == 0:
       multiples.append(i)
   return sum(multiples)
