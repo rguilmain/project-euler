@@ -5,18 +5,21 @@ def is_palindromic(n):
   return str(n) == str(n)[::-1]
 
 
+def get_max_palindromic_product(lower_bound, upper_bound):
+  max_palindromic_product = 0
+  for i in range(lower_bound, upper_bound + 1):
+    for j in range(lower_bound, upper_bound + 1):
+      product = i * j
+      if is_palindromic(product) and product > max_palindromic_product:
+        max_palindromic_product = product
+  return max_palindromic_product
+
+
 def main(argv=None):
   if argv is not None:
     sys.argv = argv
 
-  max_palindromic_product = 0
-  for i in range(100, 1000):
-    for j in range(100, 1000):
-      product = i * j
-      if is_palindromic(product) and product > max_palindromic_product:
-        max_palindromic_product = product
-
-  print max_palindromic_product
+  print get_max_palindromic_product(100, 999)
 
 
 if __name__ == "__main__":
