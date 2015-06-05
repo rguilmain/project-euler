@@ -105,18 +105,17 @@ NUMBERS = ["37107287533902102798797998220837590246510135740250",
 
 def get_large_sum(num_leading_digits):
   # We'll use the same trick we learned in elementary school to add numbers.
-  large_sum = []
+  large_sum = ""
   remainder = 0
   for i in range(len(NUMBERS[0])):
     sum_of_column = (
       sum([int(NUMBERS[j][-1 - i]) for j in range(len(NUMBERS))]) + remainder)
     column_digit = str(sum_of_column)[-1]
     remainder = (sum_of_column - int(column_digit)) / 10
-    large_sum.insert(0, column_digit)
+    large_sum = column_digit + large_sum
   if remainder != 0:
-    for digit in str(remainder)[::-1]:
-      large_sum.insert(0, digit)
-  return "".join(map(str, large_sum[:num_leading_digits]))
+    large_sum = str(remainder) + large_sum
+  return large_sum[:num_leading_digits]
 
 
 def main(argv=None):
