@@ -12,11 +12,9 @@ def get_longest_sequence(upper_bound):
   lengths = {1: 1}
 
   def find_length(n):
-    if n in lengths:
-      return lengths[n]
-    length = find_length(get_next_in_sequence(n)) + 1
-    lengths[n] = length
-    return length
+    if n not in lengths:
+      lengths[n] = find_length(get_next_in_sequence(n)) + 1
+    return lengths[n]
 
   for i in range(1, upper_bound):
     find_length(i)
