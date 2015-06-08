@@ -8,7 +8,7 @@ def get_next_in_sequence(n):
     return 3 * n + 1
 
 
-def get_longest_sequence(upper_bound):
+def get_term_with_longest_sequence(upper_bound):
   lengths = {1: 1}
 
   def find_length(n):
@@ -27,7 +27,7 @@ def main(argv=None):
     sys.argv = argv
 
   upper_bound = 1000000
-  print get_longest_sequence(upper_bound)
+  print get_term_with_longest_sequence(upper_bound)
 
 
 if __name__ == "__main__":
