@@ -1,4 +1,4 @@
-import numpy as np
+import math
 import sys
 
 
@@ -6,11 +6,7 @@ def get_num_routes(m, n):
   """Returns the number of unique routes from the top-left of an m by n
   lattice to its bottom-right.
   """
-  num_routes = np.ones((m + 1, n + 1), dtype=np.uint64)
-  for i in range(1, m + 1):
-    for j in range(1, n + 1):
-      num_routes[i, j] = num_routes[i-1, j] + num_routes[i, j-1]
-  return num_routes[m][n]
+  return math.factorial(m + n) / math.factorial(m) / math.factorial(n)
 
 
 def main(argv=None):
