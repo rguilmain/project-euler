@@ -10,7 +10,7 @@ def get_first_fib(num_digits):
     n += 1
     F_n_2 = F_n_1
     F_n_1 = F_n
-    F_n = F_n_2 + F_n_1
+    F_n = F_n_1 + F_n_2
   return n
 
 
