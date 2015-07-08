@@ -1,4 +1,3 @@
-import math
 import unittest
 
 from solutions import euler024
