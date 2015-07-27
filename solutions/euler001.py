@@ -2,11 +2,11 @@ import sys
 
 
 def get_sum_of_multiples_of_3_and_5(upper_limit):
-  multiples = []
+  sum_of_multiples = 0
   for i in range(upper_limit):
     if i % 3 == 0 or i % 5 == 0:
-      multiples.append(i)
-  return sum(multiples)
+      sum_of_multiples += i
+  return sum_of_multiples
 
 
 def main(argv=None):
