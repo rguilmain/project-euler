@@ -2,11 +2,11 @@ import sys
 
 
 def d(n):
-  return sum([i for i in range(1, int(n / 2) + 1) if n % i == 0])
+  return sum(i for i in range(1, int(n / 2) + 1) if n % i == 0)
 
 
 def get_sum_of_amicable_numbers(upper_bound):
-  return sum([i for i in range(upper_bound) if i == d(d(i)) and i != d(i)])
+  return sum(i for i in range(upper_bound) if i == d(d(i)) and i != d(i))
 
 
 def main(argv=None):

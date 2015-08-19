@@ -7,7 +7,7 @@ def get_sum_of_names_scores():
     names = sorted(f.read().replace("\"", "").split(","))
   running_sum = 0
   for i, name in enumerate(names):
-    name_worth = sum([string.ascii_uppercase.index(char) + 1 for char in name])
+    name_worth = sum(string.ascii_uppercase.index(char) + 1 for char in name)
     running_sum += (i + 1) * name_worth
   return running_sum
 

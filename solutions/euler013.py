@@ -109,7 +109,7 @@ def get_large_sum(num_leading_digits):
   remainder = 0
   for i in range(len(NUMBERS[0])):
     sum_of_column = (
-      sum([int(NUMBERS[j][-1 - i]) for j in range(len(NUMBERS))]) + remainder)
+      sum(int(NUMBERS[j][-1 - i]) for j in range(len(NUMBERS))) + remainder)
     column_digit = str(sum_of_column)[-1]
     remainder = (sum_of_column - int(column_digit)) / 10
     large_sum = column_digit + large_sum
