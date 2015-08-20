@@ -1,3 +1,7 @@
+"""Maximum path sum II
+https://projecteuler.net/problem=67
+"""
+
 import sys
 
 import max_path_sum

@@ -1,3 +1,7 @@
+"""Summation of primes
+https://projecteuler.net/problem=11
+"""
+
 import sys
 
 

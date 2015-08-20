@@ -1,3 +1,7 @@
+"""Lattice paths
+https://projecteuler.net/problem=15
+"""
+
 import math
 import sys
 

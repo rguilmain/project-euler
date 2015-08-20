@@ -1,3 +1,7 @@
+"""10001st prime
+https://projecteuler.net/problem=7
+"""
+
 import sys
 
 import primality

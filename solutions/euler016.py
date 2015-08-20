@@ -1,3 +1,7 @@
+"""Power digit sum
+https://projecteuler.net/problem=16
+"""
+
 import sys
 
 

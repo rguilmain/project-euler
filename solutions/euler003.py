@@ -1,3 +1,7 @@
+"""Largest prime factor
+https://projecteuler.net/problem=3
+"""
+
 import sys
 
 import primality

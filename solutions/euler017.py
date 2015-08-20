@@ -1,3 +1,7 @@
+"""Number letter counts
+https://projecteuler.net/problem=17
+"""
+
 import sys
 
 

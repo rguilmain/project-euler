@@ -1,3 +1,7 @@
+"""Highly divisible triangular number
+https://projecteuler.net/problem=12
+"""
+
 import sys
 
 import primality

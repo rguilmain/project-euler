@@ -1,3 +1,7 @@
+"""Largest product in a series
+https://projecteuler.net/problem=8
+"""
+
 import sys
 
 
