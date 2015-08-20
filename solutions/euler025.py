@@ -11,10 +11,9 @@ def get_first_fib(num_digits):
   while True:
     fib_n = fib_n_1 + fib_n_2
     if len(str(fib_n)) >= num_digits:
-      break
+      return n
     n += 1
     fib_n_1, fib_n_2 = fib_n, fib_n_1
-  return n
 
 
 def main(argv=None):
