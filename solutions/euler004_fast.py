@@ -23,7 +23,7 @@ def main(argv=None):
   if argv is not None:
     sys.argv = argv
 
-  print get_max_palindromic_product(100, 999)
+  print get_max_palindromic_product(lower_bound=100, upper_bound=999)
 
 
 if __name__ == "__main__":

@@ -13,9 +13,7 @@ def main(argv=None):
   if argv is not None:
     sys.argv = argv
 
-  num_rows = 20
-  num_cols = 20
-  print get_num_routes(num_rows, num_cols)
+  print get_num_routes(m=20, n=20)
 
 
 if __name__ == "__main__":

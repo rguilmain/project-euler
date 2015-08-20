@@ -18,8 +18,7 @@ def main(argv=None):
   if argv is not None:
     sys.argv = argv
 
-  n = 10001
-  print get_nth_prime(n)
+  print get_nth_prime(n=10001)
 
 
 if __name__ == "__main__":

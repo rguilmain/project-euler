@@ -26,8 +26,7 @@ def main(argv=None):
   if argv is not None:
     sys.argv = argv
 
-  upper_bound = 1000000
-  print get_term_with_longest_sequence(upper_bound)
+  print get_term_with_longest_sequence(upper_bound=1000000)
 
 
 if __name__ == "__main__":

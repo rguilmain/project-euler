@@ -19,7 +19,7 @@ def main(argv=None):
   if argv is not None:
     sys.argv = argv
 
-  print get_sum_of_even_fibonacci(4000000)
+  print get_sum_of_even_fibonacci(upper_limit=4000000)
 
 
 if __name__ == "__main__":

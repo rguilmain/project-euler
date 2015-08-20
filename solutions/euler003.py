@@ -11,8 +11,7 @@ def main(argv=None):
   if argv is not None:
     sys.argv = argv
 
-  n = 600851475143
-  print get_largest_prime_factor(n)
+  print get_largest_prime_factor(600851475143)
 
 
 if __name__ == "__main__":

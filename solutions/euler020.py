@@ -10,8 +10,7 @@ def main(argv=None):
   if argv is not None:
     sys.argv = argv
 
-  number = math.factorial(100)
-  print get_sum_of_digits(number)
+  print get_sum_of_digits(math.factorial(100))
 
 
 if __name__ == "__main__":

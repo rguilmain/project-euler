@@ -55,8 +55,7 @@ def main(argv=None):
   if argv is not None:
     sys.argv = argv
 
-  num_consecutive = 4
-  print get_largest_product_in_grid(num_consecutive)
+  print get_largest_product_in_grid(num_consecutive=4)
 
 
 if __name__ == "__main__":

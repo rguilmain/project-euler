@@ -42,8 +42,7 @@ def main(argv=None):
   if argv is not None:
     sys.argv = argv
 
-  number = 1000
-  print get_sum_letter_counts(number)
+  print get_sum_letter_counts(upper_bound=1000)
 
 
 if __name__ == "__main__":

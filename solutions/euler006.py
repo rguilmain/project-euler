@@ -17,8 +17,7 @@ def main(argv=None):
   if argv is not None:
     sys.argv = argv
 
-  n = 100
-  print get_sum_square_difference(n)
+  print get_sum_square_difference(100)
 
 
 if __name__ == "__main__":

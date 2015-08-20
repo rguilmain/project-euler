@@ -16,8 +16,7 @@ def main(argv=None):
   if argv is not None:
     sys.argv = argv
 
-  dividend = 20
-  print get_smallest_multiple(dividend)
+  print get_smallest_multiple(dividend=20)
 
 
 if __name__ == "__main__":

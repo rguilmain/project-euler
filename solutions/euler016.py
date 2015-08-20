@@ -9,8 +9,7 @@ def main(argv=None):
   if argv is not None:
     sys.argv = argv
 
-  number = 2**1000
-  print get_sum_of_digits(number)
+  print get_sum_of_digits(2**1000)
 
 
 if __name__ == "__main__":

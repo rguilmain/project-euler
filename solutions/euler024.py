@@ -2,7 +2,7 @@ import itertools
 import sys
 
 
-def get_nth_permutation(n, digits):
+def get_nth_permutation(digits, n):
   permutations = itertools.permutations(digits)
   for i in range(n - 1):
     permutations.next()
@@ -13,7 +13,7 @@ def main(argv=None):
   if argv is not None:
     sys.argv = argv
 
-  print get_nth_permutation(1000000, range(10))
+  print get_nth_permutation(range(10), n=1000000)
 
 
 if __name__ == "__main__":

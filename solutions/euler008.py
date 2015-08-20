@@ -37,8 +37,7 @@ def main(argv=None):
   if argv is not None:
     sys.argv = argv
 
-  num_adjacent_digits = 13
-  print get_largest_product(num_adjacent_digits)
+  print get_largest_product(num_adjacent_digits=13)
 
 
 if __name__ == "__main__":

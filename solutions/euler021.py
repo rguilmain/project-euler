@@ -13,8 +13,7 @@ def main(argv=None):
   if argv is not None:
     sys.argv = argv
 
-  upper_bound = 10000
-  print get_sum_of_amicable_numbers(upper_bound)
+  print get_sum_of_amicable_numbers(upper_bound=10000)
 
 
 if __name__ == "__main__":

@@ -17,8 +17,7 @@ def main(argv=None):
   if argv is not None:
     sys.argv = argv
 
-  upper_limit = 2000000
-  print get_sum_of_primes(upper_limit)
+  print get_sum_of_primes(upper_limit=2000000)
 
 
 if __name__ == "__main__":

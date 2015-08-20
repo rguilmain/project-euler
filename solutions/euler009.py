@@ -13,8 +13,7 @@ def main(argv=None):
   if argv is not None:
     sys.argv = argv
 
-  s = 1000
-  print get_special_pythagorean_triplet(s)
+  print get_special_pythagorean_triplet(1000)
 
 
 if __name__ == "__main__":

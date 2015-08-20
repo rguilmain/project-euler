@@ -26,8 +26,7 @@ def main(argv=None):
   if argv is not None:
     sys.argv = argv
 
-  n = 500
-  print get_first_triangle_num_with_over_n_divisors(n)
+  print get_first_triangle_num_with_over_n_divisors(n=500)
 
 
 if __name__ == "__main__":

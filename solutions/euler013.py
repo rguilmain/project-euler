@@ -122,8 +122,7 @@ def main(argv=None):
   if argv is not None:
     sys.argv = argv
 
-  num_leading_digits = 10
-  print get_large_sum(num_leading_digits)
+  print get_large_sum(num_leading_digits=10)
 
 
 if __name__ == "__main__":
