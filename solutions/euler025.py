@@ -3,14 +3,13 @@ import sys
 
 def get_first_fib(num_digits):
   n = 3
-  F_n = 2    # Fib(n)
-  F_n_1 = 1  # Fib(n-1)
-  F_n_2 = 1  # Fib(n-2)
-  while len(str(F_n)) < num_digits:
+  fib_n_1, fib_n_2 = 1, 1
+  while True:
+    fib_n = fib_n_1 + fib_n_2
+    if len(str(fib_n)) >= num_digits:
+      break
     n += 1
-    F_n_2 = F_n_1
-    F_n_1 = F_n
-    F_n = F_n_1 + F_n_2
+    fib_n_1, fib_n_2 = fib_n, fib_n_1
   return n
 
 
