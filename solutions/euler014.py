@@ -10,15 +10,12 @@ def get_next_in_sequence(n):
 
 def get_term_with_longest_sequence(upper_bound):
   lengths = {1: 1}
-
   def find_length(n):
     if n not in lengths:
       lengths[n] = find_length(get_next_in_sequence(n)) + 1
     return lengths[n]
-
   for i in range(2, upper_bound):
     find_length(i)
-
   return max(lengths, key=(lambda key: lengths[key]))
 
 
