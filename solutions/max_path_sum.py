@@ -3,7 +3,7 @@
 def get_max_path_sum(filename):
   """A dynamic programming approach where we (bottom-up and in-place) replace
   the value of each element in the given triangle with that element's utility
-  (it's given value plus the utility of its two children). Then, return the
+  (its given value plus the utility of its two children). Then, return the
   utility of the top element."""
   with open(filename, 'r') as f:
     triangle = [[int(i) for i in line.split()] for line in f]
